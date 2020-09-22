@@ -11,7 +11,7 @@ services:
       MINIO_SECRET_KEY: fg4wGQOtwNNf7Yjxpt2NEBIr0c5G3++h5Qmb4NivKviy7YIum8Y24hGPl95Sj1jpLqE8LpxhpX6xmm4A4UBQ6g==
     command: server /data
   
-  upload-service:
+  upload_service_test:
     build:
         context: .
         dockerfile: test.Dockerfile
