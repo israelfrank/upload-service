@@ -53,7 +53,7 @@ pipeline {
       }
       // run unit test using docker-compose with minio
       stage('build dockerfile of tests') {
-        teps {
+        steps {
           sh 'docker-compose -f docker-compose.test.yml up --exit-code-from upload_service_test' 
         }
         post {
