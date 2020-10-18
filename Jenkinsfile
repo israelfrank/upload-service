@@ -11,7 +11,7 @@ pipeline {
       spec: 
           containers: 
             - name: dind-slave
-              image: qayesodot/qayesodot:dind-compose 
+              image: docker/compose
               resources: 
                   requests: 
                       cpu: 20m 
