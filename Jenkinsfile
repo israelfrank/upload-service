@@ -11,7 +11,7 @@ pipeline {
       spec: 
           containers: 
             - name: dind-slave
-              image: docker/compose
+              image: aymdev/dind-compose
               resources: 
                   requests: 
                       cpu: 20m 
@@ -28,6 +28,7 @@ pipeline {
     }
   }   
     stages {
+      //docker:1.12.6-dind
       // this stage create enviroment variable from git for discored massage
       stage('get_commit_msg') {
         steps {
